@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row{
+    padding-left: 20px;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+
+}
+.row h2{
+    padding-bottom: 10px;
+}
+.posters{
+    display:flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.posters::-webkit-scrollbar{
+    display:none;
+}
+.poster{
+    width:100%;
+    object-fit: contain;
+    height: 150px;
+    transition: transform 300ms;
+    margin-right: 10px;
+
+}
+.poster:hover{
+    transform: scale(1.08);
+}
+.poster_large{
+    height: 250px;
+
+}
+.poster_large:hover{
+    transform: scale(1.09);
+}
